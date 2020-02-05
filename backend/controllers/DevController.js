@@ -18,16 +18,16 @@ module.exports = {
     //     console.log(devDelete);
     // },
 
-    async update(request, response) {
-        const { github_username, techs, name } = request.body;
+    // async update(request, response) {
+    //     const { github_username, techs, name } = request.body;
 
-        let devUpdate = await Dev.findOne({ github_username });
+    //     let devUpdate = await Dev.findOne({ github_username });
 
-        devUpdate = await Dev.update({
-            name,
-        })
-        console.log(devUpdate);
-    },
+    //     devUpdate = await Dev.update({
+    //         name,
+    //     })
+    //     console.log(devUpdate);
+    // },
 
     async index(request, response) {
         const devs = await Dev.find();
